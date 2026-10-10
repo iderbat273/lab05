@@ -266,7 +266,7 @@
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"HTTP status is 200\", function () { pm.response.to.have.status(200); });",
-                  "pm.test(\"result is ERROR_INTENTIONALLY_WRONG\", function () { pm.expect(pm.response.json().result).to.eql(\"ERROR_NO_STUDENT\"); });"
+                  "pm.test(\"result is ERROR_NO_STUDENT\", function () { pm.expect(pm.response.json().result).to.eql(\"ERROR_INTENTIONALLY_WRONG\"); });"
                 ]
               }
             }
